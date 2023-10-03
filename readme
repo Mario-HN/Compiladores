@@ -1,0 +1,24 @@
+Para rodar o seu compilador criado com o Flex e o Bison, siga os passos abaixo:
+
+1. Certifique-se de que você tem o Flex e o Bison instalados no seu sistema. Você pode verificar a presença deles executando os seguintes comandos no terminal:
+
+flex --version
+bison --version
+
+Se eles não estiverem instalados, você precisará instalá-los. Você pode fazer isso utilizando um gerenciador de pacotes apropriado para o seu sistema operacional, como apt-get, yum, brew, ou outros, dependendo do sistema.
+
+2. Crie os arquivos necessários para o seu compilador. Certifique-se de que você tem os arquivos "tokens.h", "scanner.l", "main.c", "parser.y" e outros necessários, organizados na estrutura de diretórios conforme mencionado anteriormente.
+Use um terminal para navegar até o diretório onde estão localizados os arquivos do seu compilador.
+Execute o seguinte comando para compilar o seu código fonte:
+
+make
+
+Isso utilizará o Makefile que você criou para compilar o seu projeto. Se tudo estiver configurado corretamente, isso deve gerar um executável chamado "compilador" no mesmo diretório.
+
+3. Agora, você pode usar o seu compilador para analisar um arquivo de código fonte da sua linguagem. Suponha que você tenha um arquivo de código fonte chamado "codigo_fonte.txt":
+
+./compilador codigo_fonte.txt
+
+Substitua "codigo_fonte.txt" pelo nome do arquivo de código fonte que você deseja compilar.
+
+4. O seu compilador deve analisar o arquivo e, se não houver erros sintáticos, terminar sem erros. Se houver erros, o compilador pode imprimir mensagens de erro.
